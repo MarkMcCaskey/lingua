@@ -1,0 +1,126 @@
+* Language learning software
+  The purpose of this project is to design and implement a language
+  learning system based on reading, listening, or otherwise using the
+  language.
+
+** Specification
+  
+*** Description of system
+    
+**** Overview
+     The system will be a generic system for managing a user's
+     accumulated vocabulary, articles/texts, and provide useful and
+     efficient interfaces to them.
+     
+     The system will be as language-neutral as possible (TODO: define
+     in a later section), thus it may be used for any language, natural
+     or otherwise that fits within the given definition.
+     
+     Unlike many existing solutions, this project will focus on a more
+     "push-based" style of language learning, utilizing customizable
+     recommendation systems, as opposed to placing this burden solely
+     on the user
+     
+     The system shall define a standard API/interface to allow use
+     with various front ends and modifications (things like user
+     scripts).
+     
+**** Purpose
+     The purpose of this software system is to increase the
+     productivity of motivated language students, specifically those
+     that are self-directed.
+     
+     This system will accommodate "power-users" to build customized
+     language learning systems that suits their specific use-case.
+     Thus, it will be generic over as many design points as possible,
+     while also providing a "standard" or example implementation.
+
+*** Use cases
+    The ways in which users will use the software
+
+**** Using a system
+     The system will provide a well documented "standard"
+     implementation or example implementation to guide users to create
+     their own systems.  That said, the standard implementation will
+     be sufficient for basic use for languages which have the
+     properties covered by this implementation. 
+
+     (i.e. if the standard is built for an analytic language with
+     spaces as word delimiters, it may also apply to similar languages
+     without the need for much extension)
+     
+     The user of this standard system, will use one of the provided
+     front-ends to specify:
+     - Their target language
+       - In this example the language must already be supported by the
+         standard system
+     - Their current level of knowledge
+       - (If supported by the system; this could range anywhere from
+         importing from existing language learning tools, to
+         specifying proficiency on standard scales)
+     - Various preferences
+       - Related to the recommendation system, if it exists
+       - Related to the speed at which they intend to study
+       - Related to their interests, if applicable, based on "content
+         packs" or other included texts/articles
+         - i.e. If the standard includes sample texts of fairy tales,
+           Wikipedia articles, and recipes, the user should be able to
+           influence their recommendations/suggestions (note: this
+           related to the recommendation system)
+       - Related to any relevant extensions to the language
+         - These could be user specified or otherwise included as some
+           "standard" extension to the language (examples of this may
+           be something such as selecting "traditional vs simplified
+           characters for Chinese" (However this is likely too complex
+           and Traditional and simplified Chinese are probably best as
+           separate languages entirely (this will be discussed further later)))
+
+           
+     Once the user has set up the system, they may provide further
+     information to the system, such as custom texts to be studied.
+     
+     The user will then select a text to read.
+     
+     The front-end will render the text with unknown words clearly
+     marked and provide mechanisms to look them up, mark them as
+     "known", or otherwise interact with them in an educational manner
+     (TODO: provide more information here
+     Temporary info dump:
+     - This may include metadata such as
+       - pronunciation
+       - stroke order
+       - etymology
+       - synonyms/antonyms
+       - example sentences
+       - links to other information, etc.
+         )
+         
+         
+     The user will read through the text with the provided tools,
+     which may include such things as text-to-speech, alternate
+     reading modes, or audio versions of the file.
+
+     The user will save (and otherwise categorize) words they don't
+     know or wish to study further using the mechanisms provided by
+     the front-end.
+     
+     The system will update its models to account for the text just
+     read. This may include things such as:
+     - Updating SRS information for words read in the article
+       
+       
+     TODO: further structure this use case
+
+**** Building a system
+     The motivated user will likely wish to extend the system.  The
+     system shall provide mechanisms for adding user-defined modules
+     so that it can be customized without technical knowledge.
+     Additionally, the system will provide mechanisms for the creation
+     of such modules.
+
+
+** Software Development
+
+** Manual
+
+** Milestones
